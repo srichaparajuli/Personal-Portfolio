@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgb(0, 0, 33);
+    color: white;
+    font-family: "Poppins", "sans-serif";
+}
+
+/*  navbar */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 10000;
+    align-items: center;
+    /* height: 70px; */
+}
+
+header.sticky {
+    padding: 5px 100px;
+    background-color: rgb(0, 0, 33);
+}
+
+header.sticky ul li a {
+    color: white;
+}
+
+
+header .logo {
+    position: relative;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6px;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+}
+
+header ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+
+}
+
+@media only screen and (min-width: 100px) {
+
+    header,
+    header ul {
+        display: column;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    header,
+    header ul {
+        display: flex;
+    }
+}
+
+/* Home */
+.firstsection {
+    display: flex;
+    justify-content: space-around;
+    /* margin: 80px 0; */
+    align-items: center;
+}
+
+.firstsection>div {
+    width: 30%;
+}
+
+.leftsection {
+    font-size: 2rem;
+}
+
+.leftsection .buttons {
+    padding: 23px;
+}
+
+.leftsection .btn {
+    padding: 12px;
+    background: rgb(16, 16, 62);
+    color: aliceblue;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 15px;
+    margin: 5px;
+}
+
+.home-image {
+    position: relative;
+}
+
+.rightsection {
+    border-radius: 10px;
+    /* background: #000; */
+    padding-left: 100px;
+}
+
+.rightsection img {
+    width: 130%;
+    /* max-width: 500px; */
+    height: auto;
+
+}
+
+.liquid-shape {
+    position: absolute;
+    width: 130%;
+    z-index: -1;
+    top: 5%;
+    overflow-y: hidden;
+    outline: #0e3959;
+}
+
+.liquid-shape:nth-child(2) {
+    filter: blur(50px);
+}
+
+@keyframes myanim {}
+
+.purple {
+    color: rgb(141, 27, 248);
+}
+
+#element {
+    color: rgb(141, 27, 248);
+}
+
+.secondSection {
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+}
+
+main hr {
+    border: 0px;
+    background-color: rgb(86, 86, 181);
+    height: 1.4px;
+    margin: 40px 90px;
+}
