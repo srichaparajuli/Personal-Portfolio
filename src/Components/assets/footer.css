@@ -12,7 +12,7 @@ footer {
     justify-content: center;
     align-items: center;
     overflow-x: hidden;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 footer .social_icon,
@@ -34,7 +34,7 @@ footer .social_icon li a {
     font-size: 2em;
     color: #fff;
     margin: 0 10px;
-    display: inline-block;
+    /* display: inline-block; */
     transition: 0.5s;
 }
 
@@ -64,22 +64,12 @@ footer .footer-down {
     margin-left: 20px;
 }
 
-/* footer .wave {
-    position: absolute;
-    top: -100px;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    background: #000 url(wave.jpg);
-    background-size: 100px 100px;
-} */
+
 
 
 .hidden {
     opacity: 0;
     transition: all 2s;
-    /* filter: blur(5px);
-    transform: translateX(-100%); */
 
 }
 
@@ -87,4 +77,11 @@ footer .footer-down {
     opacity: 1;
     filter: blur(0);
     transform: translateY(0);
+}
+
+@media only screen and (min-width: 468px) {
+    footer .social_icon {
+        display: flex;
+        flex-direction: row;
+    }
 }

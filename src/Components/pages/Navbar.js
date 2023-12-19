@@ -1,12 +1,26 @@
 import React from "react";
+import { useState } from 'react';
 import "../assets/index.css";
 function Navbar() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  const handleToggle = () => {
+    setIsMobile(!isMobile);
+  }
+ 
+
+
+ 
   return (
     <div>
       <header>
-        <a href="#" className="logo">
-          Sricha Portfolio
-        </a>
+      <nav className="navbar">
+      <div className="logo">SRICHA PARAJULI</div>
+            
+     </nav>
+
+      <div className={`nav-links ${isMobile ? 'mobile' : ''}`}>
+       
         <ul>
           <li>
             <a href="/"> Home </a>
@@ -22,6 +36,14 @@ function Navbar() {
             <a href="#Contactus"> Contact Me</a>
           </li>
         </ul>
+        </div>
+        <div className="mobile-menu-icon" onClick={handleToggle}>
+        {isMobile ? 'X' : '☰'}
+        
+      </div>
+      
+       
+    
       </header>
     </div>
   );

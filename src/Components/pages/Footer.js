@@ -4,7 +4,7 @@ function Footer() {
   return (
     <div>
       <footer>
-        <ul class="social_icon">
+        <ul className="social_icon">
           <li>
             <a href="#">
               <ion-icon name="logo-facebook"></ion-icon>
@@ -22,7 +22,7 @@ function Footer() {
           </li>
         </ul>
 
-        <div class="menu">
+        <div className="menu">
           <ul>
             <li>
               <a href="index.html"> Home </a>

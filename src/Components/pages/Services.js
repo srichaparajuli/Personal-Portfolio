@@ -8,10 +8,11 @@ function Services() {
     <div>
       <section class="hidden">
         <div class="section-service" id="section">
-          <div class="title">
-            <h1>Our Services</h1>
-          </div>
+       
+        <h1>Our Services</h1>
+         
           <div class="services">
+            
             <div class="card">
               <div class="icons">
                 {/* <BsFillDisplayFill /> */}
@@ -52,7 +53,7 @@ function Services() {
                 {/* <MdDesignServices /> */}
                 <GrWorkshop />
               </div>
-              <h2>UI/UX</h2>
+              <h2>Designer</h2>
               {/* <img class="image-ui" src="../img/uii.png" alt="" /> */}
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. A

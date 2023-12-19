@@ -1,104 +1,177 @@
+
 /* About me */
-.section-about {
-    width: 100%;
-    min-height: 100vh;
-    background: rgb(240, 240, 245);
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+.btn-resume {
+    
+}
+#aboutUs {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-.container-about {
-    width: 80%;
-    display: block;
-    margin: auto;
-    padding-top: 100px;
-
+#aboutUs img {
+    width: 400px;
+    margin: 20px;
+    border-radius: 10px;
+    border: 1px solid white;
 }
 
-.contentsection-about {
-    float: right;
-    width: 55%;
+.content {
+    margin: 20px 0;
 }
 
-.image-section {
-    float: left;
-    width: 40%;
-    border-radius: 100px;
+.content h2 {
+    font-size: 50px;
+    color: #ffca70;
 }
 
-.image-section img {
-    width: 90%;
-    height: auto;
-    border-radius: 20px;
-    border: 5px solid rgb(145, 140, 150);
-
-}
-.contentsection-about .title-about {
-  
-    font-size: 28px;
+.content h4 {
+    font-size: 20px;
+    color: #fff;
+    margin: 10px 0;
 }
 
-.contentsection-about .content-about h3 {
-    margin-top: 20px;
-    color: rgb(100, 128, 128);
-    font-size: 19px;
-}
-
-.contentsection-about .content-about p {
-    margin-top: 10px;
-    font-family: sans-serif;
+.description {
+    color: #fff;
+    margin: 20px 0;
     font-size: 18px;
-    line-height: 1.5;
-    color: black;
+    line-height: 30px;
+    font-weight: 100;
 }
 
-.title-about h1 {
-
-    margin: 23px 0px;
-    color: black;
+.btnn {
+   
+    padding: 12px;
+    width: 100%;
+    background: rgb(16, 16, 62);
+    color: aliceblue;
+    border: 2px solid rgb(50, 29, 167);
+    border-radius: 6px;
+    font-size: 15px;
+    margin: 5px;
 }
 
-@media screen and (max-width:768px) {
-    .container-about {
+.btnn:hover {
+    border: 2px solid rgb(16, 16, 62);
+    background: transparent;
+    color: white;
+}
+
+@media screen and (max-width: 790px) {
+    #aboutUs img {
         width: 80%;
-        display: block;
-        margin: auto;
-        padding-top: 50px;
     }
 
-    .contentsection-about {
-        float: none;
-        width: 100%;
-        display: block;
-        margin: auto;
+    #aboutUs {
+        grid-template-columns: 1fr;
+        place-items: center;
     }
-
-    .image-section {
-        float: none;
-        width: 100%;
-        display: block;
-        margin: auto;
-    }
-
-    .title-about h1 {
-        border-bottom: 3px solid rgb(100, 128, 128);
-        margin: 23px 0px;
-        color: black;
-    }
-
-    .contentsection-about .title-about {
-
-        text-align: center;
-        font-size: 19px;
-    }
-
 }
-* Education */ 
- 
+
+
+/* new */
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Poppins', sans-serif;
+}
+.timeline-section{
+	/* background-color: #24292d; */
+	min-height: 100vh;
+	padding: 100px 15px;
+}
+.timeline-items{
+	max-width: 1000px;
+	margin:auto;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+}
+.timeline-items::before{
+	content: '';
+	position: absolute;
+	width: 2px;
+	height: 100%;
+	background-color: #2f363e;
+	left: calc(50% - 1px);
+}
+.timeline-item{
+	margin-bottom: 40px;
+	width: 100%;
+	position: relative;
+}
+.timeline-item:last-child{
+	margin-bottom: 0;
+}
+.timeline-item:nth-child(odd){
+    padding-right: calc(50% + 30px);
+	text-align: right;
+}
+.timeline-item:nth-child(even){
+    padding-left: calc(50% + 30px);
+}
+.timeline-dot{
+	height: 16px;
+	width: 16px;
+	/* background-color: #eaa023; */
+	position: absolute;
+	left: calc(50% - 8px);
+	border-radius: 50%;
+	top:10px;
+}
+.timeline-date{
+	font-size: 18px;
+	color: #eaa023;
+	margin:6px 0 15px;
+}
+.timeline-content{
+    background-color: #2f363e;
+	padding: 30px;
+	border-radius: 5px;
+}
+.timeline-content h3{
+    font-size: 20px;
+	color: #ffffff;
+	margin:0 0 10px;
+	text-transform: capitalize;
+	font-weight: 500;
+}
+.timeline-content p{
+    color: #c8c8c8;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 22px;
+}
+
+/* responsive */
+@media(max-width: 767px){
+	.timeline-items::before{
+		left: 7px;
+	}
+	.timeline-item:nth-child(odd){
+		padding-right: 0;
+		text-align: left;
+	}
+	.timeline-item:nth-child(odd),
+	.timeline-item:nth-child(even){
+		padding-left: 37px;
+	}
+	.timeline-dot{
+		left:0;
+	}
+}
+
+
+
+
 .secondSection {
     width: 95%;
-    min-height: 100vh;
+  
     display: block;
-    margin: auto;
+    margin:auto;
 }
 
 
@@ -168,9 +241,9 @@
 
 @media screen and (min-width:221px) and (max-width:768px) {
 
-    /* .secondSection {
-        min-height: 120vh;
-    } */
+    .secondSection {
+        margin: 75px auto;
+    }
 
     .secondSection .box {
         background: white;

@@ -4,24 +4,10 @@
 
 }
 
-.title h1 {
+.section-service h1 {
     text-align: center;
-    /* padding-top: 58%; reponsive  */
-    /* padding-top: 50px; */
-    font-size: 42px;
-
     color: white;
-
-}
-
-.title h1::after {
-    content: "";
-    height: 4px;
-    width: 230px;
-    color: #0e3959;
-    background-color: #abb1b7;
-    display: block;
-    margin: auto;
+    font-weight: bolder;
 }
 
 .services {
@@ -29,8 +15,9 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 75px auto;
+    margin: 5px auto;
     text-align: center;
+
 }
 
 /* .image-service {

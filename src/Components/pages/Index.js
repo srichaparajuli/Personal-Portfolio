@@ -4,6 +4,10 @@ import Aboutus from "./About";
 import Services from "./Services";
 import Contactus from "./Contactus";
 import Footer from "./Footer";
+import { FaFacebook } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 function Index() {
   window.addEventListener("scroll", function () {
     var header = document.querySelector("header");
@@ -31,10 +35,25 @@ function Index() {
         <div className="leftsection">
           Hi,I'm <span className="purple">Sricha Parajuli</span>
           <div>and I am a passionate</div>
-          <span id="element"></span>
-          <div className="buttons">
-            <button className="btn">Download Resume</button>
-            <button className="btn">HireMe</button>
+          <span id="element">Web Developer</span>
+          <div>
+            <div class="icons">
+              <li>
+
+                <Link to=""> <FaFacebook /></Link>
+
+              </li>
+              <li>
+
+                <Link to=""><FaInstagram /> </Link>
+
+              </li>
+              <li>
+                <Link to=""><FaLinkedin /> </Link>
+
+
+              </li>
+            </div>
           </div>
         </div>
 

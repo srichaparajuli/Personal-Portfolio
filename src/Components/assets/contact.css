@@ -23,12 +23,13 @@
 
 .box-contact {
     position: relative;
-    display: grid;
+    display:flex;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 7fr 4fr;
     grid-template-areas: "form info"
         "form map";
     grid-gap: 20px;
+    flex-direction: row;
 }
 
 .contact {
@@ -48,6 +49,7 @@
 
 .form {
     grid-area: form;
+    display:none;
 }
 
 .info {
@@ -62,6 +64,7 @@
 .formBox {
     position: relative;
     width: 100%;
+    
 }
 
 .formBox .row50 {
@@ -184,6 +187,7 @@
 
 .map {
     padding: 0;
+    width: 100%;
 }
 
 .map iframe {
@@ -196,7 +200,9 @@
     /* body {
         background: #03a9f5;
     } */
-
+    .box-contact{
+        flex-direction: column;
+    }
     .contactUs {
         padding: 30px;
     }
